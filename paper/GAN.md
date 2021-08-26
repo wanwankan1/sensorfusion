@@ -10,3 +10,14 @@
 
 ### Related Work
 
+==文中提到目前大多数成功生成模型都是参数化的表示一个概率分布函数。并通过训练的方式使这个分布函数最大化之类的。==其中最成功的就是deep Boltzmann machine （DBM）深度玻尔兹曼机。
+
+### Adversarial nets
+
+这一段讲了具体是如何同时训练G和D的。总的来说如下
+
+![image-20210826163750632](C:\Users\wanwankan\AppData\Roaming\Typora\typora-user-images\image-20210826163750632.png)
+
+
+
+在每一个迭代中进行n次discriminator的训练。一次generator的训练。交叉的作用是防止一方过拟合。
