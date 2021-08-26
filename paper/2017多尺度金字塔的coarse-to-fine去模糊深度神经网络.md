@@ -183,7 +183,7 @@ https://zhuanlan.zhihu.com/p/89419960
 这个loss是综合每一层的生成清晰图和真实清晰图的区别生成的loss。其根本来源于MSE criterion（Mean Square Error）也就是均方误差。这个误差的目的是衡量每个像素的平均误差的平方。
 
 $$
-\mathcal{L}_{\text {cont }}=\frac{1}{2 K} \sum_{k=1}^{K} \frac{1}{c_{k} w_{k} h_{k}}\left\|L_{k}-S_{k}\right\|^{2}
+\mathcal{L}_{\text {cont }}=\frac{1}{2 K} \sum_{k=1}^{K} \frac{1}{c_{k} w_{k} h_{k}}\left\|L_{k}-S_{k}\right\|^{2}
 $$
 **Adversarial loss**
 
